@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valhalla World Cup Spinner - Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style/project-detail.css">
+</head>
+
+<body class="project-detail-view">
+    <noscript>
+        <h1>Woops, JavaScript is not enabled. Please enable it to view this website!</h1>
+        <p>The theme toggle needs JavaScript, so you'll see the default light theme.</p>
+    </noscript>
+    
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About me</a>
+            <a href="project.html">Project</a>
+            <a href="workexperience.html">Work Experience</a>
+            <a href="contactme.html">Contact me</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookie</a>
+            <button id="theme-toggle" class="toggle-link" type="button" aria-live="polite" aria-label="Toggle between light and dark theme"></button>
+        </nav>
+    </header>
+
+    <main class="detail-content">
+        <a href="project.html" class="back-link">&larr; Back to Projects</a>
+
+        <article>
+            <header class="project-header">
+                <h1 id="project-title">Valhalla World Cup Spinner</h1>
+                <div class="meta" id="project-date">January 2025</div>
+            </header>
+
+            <div class="project-media" id="project-media">
+                <picture>
+                    <source srcset="img/projects/flag-spinner-fixed-640.gif 640w" type="image/gif">
+                    <img src="img/projects/flag_spinner.gif" alt="Valhalla World Cup Spinner">
+                </picture>
+            </div>
+
+            <div class="project-description" id="project-description">
+                <p>A fun event tool I vibe-coded one night for the Valhalla FC community to assign random World Cup countries to players.</p>
+            </div>
+
+            <div class="project-specs">
+                <div class="spec-item">
+                    <strong>Status</strong>
+                    <span id="project-status">Completed</span>
+                </div>
+                <div class="spec-item">
+                    <strong>Key Features</strong>
+                    <p id="project-features">React frontend and Python backend connected to a database of players. Shows their Discord icon and assigns a random country, then saves the result.</p>
+                </div>
+                <div class="spec-item">
+                    <strong>Technologies Used</strong>
+                    <ul class="tech-stack" id="project-tools">
+                        <li class="tech-badge">React</li>
+                        <li class="tech-badge">Python</li>
+                        <li class="tech-badge">Discord</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <em>This page was made by <span>&hearts;</span> Mark Ruangrattham</em>
+    </footer>
+
+    <script src="js/lightdark.js" defer></script>
+</body>
+</html>
