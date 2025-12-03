@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="style/form-with-js.css">
+</head>
+
+<body>
+    <noscript>
+        <p>Woops, JavaScript is not enabled. The enhanced form validation and theme switcher need JavaScript, so you'll see the default light theme.</p>
+    </noscript>
+    <header>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">
+            <span class="bar"></span>
+        </label>
+        <nav id="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="aboutme.html" class="nav-link">About me</a>
+            <a href="project.html" class="nav-link">Project</a>
+            <a href="workexperience.html" class="nav-link">Work Experience</a>
+            <a href="contactme.html" class="nav-link">Contact me</a>
+            <a href="form-with-js.html" class="nav-link" aria-current="page">Form with JavaScript</a>
+            <a href="form-no-js.html" class="nav-link">Form without JavaScript</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookie</a>
+            <button id="theme-toggle" class="toggle-link" type="button" aria-live="polite" aria-label="Toggle between light and dark theme"></button>
+        </nav>
+    </header>
+    <main>
+        <h1>Form with JavaScript</h1>
+
+        <form action="https://httpbin.org/post" method="POST" class="contact-form" id="contact-form" target="_blank">
+            <fieldset>
+                <legend>JavaScript Form</legend>
+                <input type="hidden" name="possible_bot" title="Possible Bot" value="true"/>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" title="Enter your name has to have a minimum of 2 characters and only letters, make sure to capitalize your first and last name" required minlength="2" maxlength="100"  pattern="^[A-Z][a-z]+ [A-Z][a-z]+$" aria-required="true" aria-describedby="name-error" autocomplete="on" autofocus>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required minlength="5" maxlength="100" aria-required="true" aria-describedby="email-error"  title="Enter your email has to have a minimum of 5 characters and only letters, numbers, and symbols" autocomplete="on" autofocus>
+                <label for="comment">Comment</label>
+                    <textarea name="comment" id="comment" minlength="10" maxlength="100"></textarea>
+                    <span id="comment-counter" class="counter-text"></span>             
+                <input type="hidden" name="form_errors" id="form_errors" value="">
+                <button id="submit-button" type="submit">Submit</button>
+              
+            </fieldset>
+            <div class="output-container">
+                
+                <output class="errors" id="errors"></output><br>
+                <output class="info" id="info"></output>
+            </div>
+
+        </form>
+
+
+    </main>
+    <script src="js/lightdark.js" defer></script>
+    <script src="js/scriptForForm.js"></script>
+</body>
+
+</html>

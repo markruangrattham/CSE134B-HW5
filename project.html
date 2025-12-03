@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="style/projects.css">
+
+</head>
+
+
+<body class="project-view">
+<noscript>
+    <h1>Woops, JavaScript is not enabled. Please enable it to view this website!</h1>
+    <p>The theme toggle needs JavaScript, so you'll see the default light theme.</p>
+</noscript>
+<header>
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<label for="nav-toggle" class="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">
+    <span class="bar"></span>
+</label>
+<nav role="navigation" aria-label="Main navigation" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="aboutme.html" class="nav-link">About me</a>
+        <a href="project.html" class="nav-link" aria-current="page">Project</a>
+        <a href="workexperience.html" class="nav-link">Work Experience</a>
+        <a href="contactme.html" class="nav-link">Contact me</a>
+        <a href="form-with-js.html" class="nav-link">Form with JavaScript</a>
+        <a href="form-no-js.html" class="nav-link">Form without JavaScript</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Free Cookie</a>
+        <button id="theme-toggle" class="toggle-link" type="button" aria-live="polite" aria-label="Toggle between light and dark theme"></button>
+</nav>
+
+</header>
+
+<main>
+    <h1>Project</h1>
+
+    <project-highlight role="region" aria-label="Project: Valhalla Bot" tabindex="0">
+        <h2>Valhalla Bot</h2>
+        <h3>September 2024 - Present</h3>
+            <p>A passion project of mine that I have been working on for over a year now. Valhalla bot is a Discord bot for a FC Mobile game community. That I'm a part of called Valhalla. The bot is built using Python and the Discord library. 
+            It has all the features that premium bots have but more personalized for our community. Most of the data is stored in a MongoDB database! </p>
+
+            <picture>
+              <source srcset="img/projects/valhalla-fc-640.webp 640w,
+                              img/projects/valhalla-fc-978.webp 978w"
+                      type="image/webp">
+              <img style="max-width: 25%;" src="img/projects/valhalla-fc-978.webp" alt="Valhalla Bot Screenshot" />
+            </picture>
+
+            <ul class="tools" aria-label="Tools used">
+                <li class="tool" title="Python">Py</li>
+                <li class="tool" title="Discord.py">D.py</li>
+                <li class="tool" title="MongoDB">MDB</li>
+            </ul>
+    </project-highlight>
+
+
+    <h2 style="text-align: center; margin-top: 5rem;">Other Projects</h2>
+    <p style="text-align: center;">Here are some of the other projects I've worked on. <strong>Click on the cards</strong> to learn more about them!</p>
+
+    <projects-section id="projects-section">
+    </projects-section>
+
+</main>
+<footer>
+    <em>This page was made by <span>&hearts;</span> Mark Ruangrattham</em>
+</footer>
+<script src="js/project-js.js" defer></script>
+<script src="js/lightdark.js" defer></script>
+<script src="js/project-transitions.js" defer></script>
+</body>
+</html>
+

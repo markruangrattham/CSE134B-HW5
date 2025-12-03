@@ -1,0 +1,95 @@
+@import url('style.css');
+
+:root{
+    --hello-world-font: 'Inter', sans-serif;
+}
+
+site-progress{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    font-family: var(--hello-world-font, Arial, sans-serif);
+}
+
+site-progress .progress-text{
+    font-size: .95rem;
+}
+
+.progress{
+    width: 200px;
+    height: 12px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.progress::-webkit-progress-bar{
+    background-color: var(--card);
+    border-radius: 999px;
+}
+
+.progress::-webkit-progress-value{
+    background-color: var(--accent);
+    border-radius: 999px;
+}
+
+.progress::-moz-progress-bar{
+    background-color: var(--accent);
+    border-radius: 999px;
+}
+
+hello-world{
+    display: block;
+    text-align: center;
+    border: 2px solid var(--muted);
+    padding: 20px;
+    margin: 20px;
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    font-family: var(--hello-world-font, Arial, sans-serif);
+
+    h1{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    summary{
+        font-size: 1.5rem;
+        font-weight: 500;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 100;
+        font-style: italic;
+    }
+}
+
+.to-do-list {
+    display: block;
+    margin: 20px;
+    font-family: var(--hello-world-font, Arial, sans-serif);
+
+    summary{
+        font-family: var(--hello-world-font, Arial, sans-serif);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    h2{
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0 0 8px 0;
+        text-align: left;
+    }
+
+    ul{
+        font-family: Georgia, 'Times New Roman', serif;
+        margin: 0;
+        padding-left: 20px;
+        text-align: left;
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="style/contactme.css">
+</head>
+
+
+
+<body>
+    <noscript>
+        <p>Woops, JavaScript is not enabled. Please enable it to view this website!</p>
+        <p>The theme toggle needs JavaScript, so you'll see the default light theme.</p>
+    </noscript>
+
+        <header>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">
+                <span class="bar"></span>
+            </label>
+            <nav id="main-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="aboutme.html" class="nav-link">About me</a>
+                    <a href="project.html" class="nav-link">Project</a>
+                    <a href="workexperience.html" class="nav-link">Work Experience</a>
+                    <a href="contactme.html" class="nav-link" aria-current="page">Contact me</a>
+                    <a href="form-with-js.html" class="nav-link">Form with JavaScript</a>
+                    <a href="form-no-js.html" class="nav-link">Form without JavaScript</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookie</a>
+                    <button id="theme-toggle" class="toggle-link" type="button" aria-live="polite" aria-label="Toggle between light and dark theme"></button>
+    </nav>
+        </header>
+        <div class="social-links">
+        <social-links>
+        <a href="https://www.linkedin.com/in/mark-ruang" target="_blank">
+          <picture>
+            <source srcset="img/linkedin-128.webp 128w,
+                            img/linkedin-256.webp 256w,
+                            img/linkedin-512.webp 512w"
+                    type="image/webp">
+            <img src="img/linkedin-512.webp" alt="LinkedIn Icon" width="100" height="100">
+          </picture>
+        </a>
+        </social-links>
+      
+        <social-links>
+        <a href="https://www.github.com/markruangrattham" target="_blank">
+          <picture>
+            <source srcset="img/github-128.webp 128w,
+                            img/github-256.webp 256w,
+                            img/github-512.webp 512w"
+                    type="image/webp">
+            <img src="img/github-512.webp" alt="GitHub Icon" width="100" height="100">
+          </picture>
+        </a>
+        </social-links>
+
+        <social-links>
+        <a href="mailto:markruangrattham@gmail.com">
+          <picture>
+            <source srcset="img/gmail-128.webp 128w,
+                            img/gmail-256.webp 256w,
+                            img/gmail-512.webp 512w"
+                    type="image/webp">
+            <img src="img/gmail-512.webp" alt="Email Icon" width="100" height="100">
+          </picture>
+        </a>
+      </social-links>
+    </div>
+
+<form action="https://httpbin.org/post" method="POST" class="contact-form">
+    <fieldset>
+        <legend>Send me a message!</legend>
+    <label for="name"><strong>Name:</strong></label>
+    <input type="text" name="name" id="name" required placeholder="Enter your name">
+    
+    
+    <label for="email"><strong>Email:</strong></label>
+    <input type="email" name="email" id="email" required placeholder="Enter your email">
+    
+
+    <label for="subject"><strong>Subject:</strong></label>
+    <input type="text" name="subject" id="subject" placeholder="Enter your subject">
+    
+    
+    <label for="message"><strong>Message:</strong></label>
+    <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+    
+    
+    <button type="submit">Submit</button>
+    </fieldset>
+</form>
+    <footer>
+        <em>This page was made by <span>&hearts;</span> Mark Ruangrattham</em>
+    </footer>
+<script src="js/lightdark.js" defer></script>
+</body>
+</html>

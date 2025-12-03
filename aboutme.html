@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="style/aboutme.css">
+
+</head>
+
+
+<body>
+    <noscript>
+        <p>Woops, JavaScript is not enabled. Please enable it to view this website!</p>
+        <p>The theme toggle needs JavaScript, so you'll see the default light theme.</p>
+    </noscript>
+    
+
+
+<header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">
+        <span class="bar"></span>
+    </label>
+    <nav id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="aboutme.html" class="nav-link" aria-current="page">About me</a>
+        <a href="project.html" class="nav-link">Project</a>
+        <a href="workexperience.html" class="nav-link">Work Experience</a>
+        <a href="contactme.html" class="nav-link">Contact me</a>
+        <a href="form-with-js.html" class="nav-link">Form with JavaScript</a>
+        <a href="form-no-js.html" class="nav-link">Form without JavaScript</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookie</a>
+        <button id="theme-toggle" class="toggle-link" type="button" aria-live="polite" aria-label="Toggle between light and dark theme"></button>
+    </nav>
+</header>
+
+
+    <h1>About Me!</h1>
+    <article>
+        <h2>Introduction</h2>
+        <about-me>
+            <picture>
+                <source srcset="img/profilepicsmall.jpg 128w,
+                                img/profilepicmed.jpg 256w" />
+
+                <img src="img/profilepic small.jpg" alt="Mark Ruangrattham">
+            </picture>
+            
+                Hello, I'm Mark Ruangrattham a 5th-year student at UCSD majoring in Computer Science
+                and minoring in Economics. I'm an upcoming software engineer trying to get into big tech
+                companies. I specialize in backend development but can also work on front-end development.
+             
+                I'm currently a web designer for one of UCSD Health's extension programs! I love the concept
+                of software engineering because it's like building a puzzle you know the different pieces,
+                but you have to use problem-solving skills to put it all together. Sometimes things don't go
+                as planned, but that's what makes it fun and challenging.
+              
+                I'm eager to apply my technical expertise, problem-solving mindset, and creativity in the
+                fast-moving world of technology, contributing to meaningful projects, tackling real-world
+                challenges, and continuing to learn along the way.
+        </about-me>
+    </article>
+
+    <fun-facts>
+        <details>
+            <summary class="fun-facts">Fun Facts About Me!</summary>
+
+            <details>
+                <summary class="favorite-food">Favorite Food Restaurant</summary>
+                <ul>
+                    
+                        
+                            <li>Panda Express</li>
+                            <li>INI Ristorante</li>
+                            <li>Ramen Nagi</li>
+                            <li>Shake Shack or In and Out Burger</li>
+                            <li>Taco Stand</li>
+                            <li>This pizza place in Downtown San Diego(yes i'm gate keeping this one)</li>
+                        
+                    
+                </ul>
+            </details>
+
+            <details>
+                <summary class="current-setup">Current Setup</summary>
+                <ul>
+                    <li>MacBook Pro 14-inch 2025</li>
+                    <li>Ipad Air 2022 5th Generation</li>
+                    <li>Iphone 15 Pro</li>
+                    <li>Apple Watch SE 1</li>
+                    <li>PC Build
+                        <ul>
+                            <li>CPU: Ryzen 7 5700G</li>
+                            <li>GPU: RTX 3060</li>
+                            <li>RAM: 16GB DDR4</li>
+                            <li>Storage: 256GB SSD + 1TB HDD</li>
+                        </ul>
+                    </li>
+                    <li>Consoles
+                        <ul>
+                            <li>PS5</li>
+                            <li>Nintendo Switch</li>
+                        </ul>
+                    </li>
+                
+                </ul>
+            </details>
+
+            <details>
+                <summary class="hoobies">Hobbies</summary>
+                <ul>
+                    <li>I'm a type of person that can never stay still for too long so I have a lot of active hobbies that I've tried and loved.
+                        <ol>
+                            <li>Soccer</li>
+                            <li>Working Out</li>
+                            <li>Running(was on the cross country and track team in high school)</li>
+                            <li>Trying out new sports or hoodies</li>
+                        </ol>
+                    <li>
+                        I love watching sports during my free time, I'm from LA orginally so a big fan of all the LA sports teams, Dodgers, Lakers, Rams LAFC.
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary class="hidden-facts">Hidden Facts About Me!</summary>
+                <ul>
+                    <li>I own one of the largest FC Mobile Communinty in the world called Valhalla FC</li>
+                    <li>I'm a huge Manchester United fan</li>
+                    <li>I write with my right hand but I left foot is my dominant foot</li>
+                </ul>
+            </details>
+
+        </details>
+    </fun-facts>
+    
+
+
+
+    <footer>
+        <em>This page was made by <span>&hearts;</span> Mark Ruangrattham</em>
+    
+    </footer>
+<script src="js/lightdark.js" defer></script>
+</body>
+
+</html>

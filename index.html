@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="js/theme-init.js"></script>
+<link rel="stylesheet" href="style/index.css">
+</head>
+
+
+<body>
+<noscript>
+    <h1>Woops, Java Script is not enabled. Please enable it to view this website!</h1>
+    <p>The theme toggle needs JavaScript, so you'll see the default light theme.</p>
+</noscript>
+
+
+<header>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">
+        <span class="bar"></span>
+    </label>
+
+    <nav id="main-nav">
+        <a href="index.html" class="nav-link" aria-current="page">Home</a>
+        <a href="aboutme.html" class="nav-link ">About me</a>
+        <a href="project.html" class="nav-link ">Project</a>
+        <a href="workexperience.html" class="nav-link ">Work Experience</a>
+        <a href="contactme.html" class="nav-link ">Contact me</a>
+        <a href="form-with-js.html" class="nav-link">Form with JavaScript</a>
+        <a href="form-no-js.html" class="nav-link">Form without JavaScript</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookie</a>
+        <button id="theme-toggle" class="toggle-link" type="button" aria-live="polite" aria-label="Toggle between light and dark theme"></button>
+    </nav>
+
+
+    
+</header>
+
+
+<main>
+
+    <hello-world>
+        <h1>Hello World</h1>
+        <details>
+            <summary>Welcome to Mark.com</summary>
+            <h3>or whatever url i get my hands on and what i could afford to buy</h3>
+        </details>
+        
+        <p>This is my personal website where I share my projects, work experience, personal thoghts, what I'm current up to and more!</p>
+    </hello-world>
+
+</main>
+
+
+<details class="to-do-list">
+    <summary>To‑Do (as of 10/30/2025)</summary>
+    <ul>
+        <li>Add JS to the website (when I'm allowed to)</li>
+        <li>Add a /thoughts section</li>
+        <li>Add a /current section</li>
+        <li>Add a /whyhireme section</li>
+        <li><del>Make project page mobile support</del></li>
+        <li>Form works on contact me page</li>
+        <li>AI Chatbot on the website to answer questions about Mark</li>
+        <li>Choose a color theme for the website</li>
+        <li>Improve CSS code on most of the pages</li>
+        <li><del>Add black and white theme for the website</del></li>
+    </ul>
+</details>
+
+<site-progress>
+    <label for="progress">Progress of my website:</label>
+    <progress class="progress" value="35" max="100">30%</progress>
+    <p class="progress-text">35%</p>
+</site-progress>
+
+
+<footer>
+    <em>This page was made by <span>&hearts;</span> Mark Ruangrattham</em>
+
+</footer>
+<script src="js/lightdark.js" defer></script>
+</body>
+</html>
