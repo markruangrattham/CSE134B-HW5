@@ -1,0 +1,143 @@
+[
+    {
+        "id": "card0",
+        "title": "Valhalla Bot",
+        "date": "September 2024 - Present",
+        "description": "A passion project of mine that I have been working on for over a year now. Valhalla bot is a Discord bot for a FC Mobile game community.",
+        "status": "Live & Active",
+        "features": "Custom community commands, MongoDB integration, and tailored features for the FC Mobile game community.",
+        "media": {
+            "type": "image",
+            "sources": [
+                {
+                    "srcset": "img/projects/valhalla-fc-640.webp 640w, img/projects/valhalla-fc-978.webp 978w",
+                    "type": "image/webp"
+                }
+            ],
+            "src": "img/projects/valhalla-fc-978.webp",
+            "alt": "Valhalla Bot Screenshot"
+        },
+        "tools": ["Python", "Discord.py", "MongoDB"],
+        "link": "valhalla-bot.html"
+    },
+    {
+        "id": "card1",
+        "title": "Leafybucks",
+        "date": "July 2025 - Present",
+        "description": "I need to be better at managing my money, so I thought why not build a nice little web app for this that can track my expenses and see how much I'm spending on doordash each month.",
+        "status": "In Development",
+        "features": "Expense tracking, budget management, category analysis, and spending trends visualization.",
+        "media": {
+            "type": "image",
+            "sources": [
+                {
+                    "srcset": "img/projects/leafybucks-640.webp 640w, img/projects/leafybucks-1280.webp 1280w, img/projects/leafybucks-1535.webp 1535w",
+                    "type": "image/webp"
+                }
+            ],
+            "src": "img/projects/leafybucks-1535.webp",
+            "alt": "Leafybucks screenshot"
+        },
+        "tools": ["GCloud", "React"],
+        "link": "leafybucks.html"
+    },
+    {
+        "id": "card2",
+        "title": "Study Genius",
+        "date": "April 2025",
+        "description": "My very first hackathon project. 24 hours to build a web application to help you study for your exams faster and more efficiently.",
+        "status": "Completed",
+        "features": "ChatGPT-powered flashcard generation backed by Firestore.",
+        "media": {
+            "type": "iframe",
+            "src": "https://www.youtube.com/embed/xdCblU1HOhE",
+            "title": "Study Genius demo"
+        },
+        "tools": ["React", "Firestore", "ChatGPT"],
+        "link": "study-genius.html"
+    },
+    {
+        "id": "card3",
+        "title": "FÚTBOL DEX",
+        "date": "August 2025 - Present",
+        "description": "A Discord bot that my friend was getting bored of, so they asked me if I could make a better one. Challenge accepted.",
+        "status": "Beta Testing Phase",
+        "features": "GCloud-powered bot with a Django website and custom API endpoints so designers can upload cards from the site and the bot can spawn them randomly.",
+        "media": {
+            "type": "image",
+            "sources": [
+                {
+                    "srcset": "img/projects/futdex-640.webp 640w, img/projects/futdex-1080.webp 1080w",
+                    "type": "image/webp"
+                }
+            ],
+            "src": "img/projects/futdex.jpg",
+            "alt": "FÚTBOL DEX screenshot"
+        },
+        "tools": ["Django", "API", "GCloud"],
+        "link": "futbol-dex.html"
+    },
+    {
+        "id": "card4",
+        "title": "Valhalla World Cup Spinner",
+        "date": "January 2025",
+        "description": "A fun event tool I vibe-coded one night for the Valhalla FC community to assign random World Cup countries to players.",
+        "status": "Completed",
+        "features": "React frontend and Python backend connected to a database of players. Shows their Discord icon and assigns a random country, then saves the result.",
+        "media": {
+            "type": "image",
+            "sources": [
+                {
+                    "srcset": "img/projects/flag-spinner-fixed-640.gif 640w",
+                    "type": "image/gif"
+                }
+            ],
+            "src": "img/projects/flag_spinner.gif",
+            "alt": "Valhalla World Cup Spinner"
+        },
+        "tools": ["React", "Python", "Discord"],
+        "link": "valhalla-spinner.html"
+    },
+    {
+        "id": "card5",
+        "title": "Birthday Countdown",
+        "date": "October 2024",
+        "description": "A gift for my girlfriend: a countdown timer that reveals a secret video when it hits zero, with music built in.",
+        "status": "Completed",
+        "features": "React-based countdown that updates every second and shows a hidden video when finished.",
+        "media": {
+            "type": "image",
+            "sources": [
+                {
+                    "srcset": "img/projects/bb-birthday-fixed-640.gif 640w",
+                    "type": "image/gif"
+                }
+            ],
+            "src": "img/projects/bb birthday.gif",
+            "alt": "Birthday countdown app"
+        },
+        "tools": ["React", "HTML", "CSS", "JavaScript"],
+        "link": "birthday-countdown.html"
+    },
+    {
+        "id": "card6",
+        "title": "Premier League Match Predictor",
+        "date": "October 2025 - Present",
+        "description": "Massive football fan so I started building a model to predict Premier League match outcomes using recent form and injuries.",
+        "status": "Planning Phase",
+        "features": "Predicts match outcomes based on team performance data using simple ML models.",
+        "media": {
+            "type": "image",
+            "sources": [
+                {
+                    "srcset": "img/projects/premier-league-640.webp 640w, img/projects/premier-league-900.webp 900w",
+                    "type": "image/webp"
+                }
+            ],
+            "src": "img/projects/premier league.jpg",
+            "alt": "Premier League predictor project"
+        },
+        "tools": ["Python", "PyTorch"],
+        "link": "pl-predictor.html"
+    }
+]

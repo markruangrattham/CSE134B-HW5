@@ -10,8 +10,78 @@
 }
 
 .project-link-button:hover {
-    background-color: var(--accent-hover, #0056b3);
+    background-color: var(--accent-hover, #0056b3); /* Fallback color if var not defined */
     transform: translateY(-2px);
     color: white;
 }
 
+.project-link-button.secondary {
+    background-color: var(--card);
+    color: var(--text);
+    border: 1px solid var(--muted);
+}
+
+.project-link-button.secondary:hover {
+    background-color: var(--surface-highlight);
+    color: var(--text);
+    border-color: var(--accent);
+}
+
+.project-button {
+    display: inline-block;
+    margin: 0;
+    padding: 0.8rem 2rem;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: var(--box-shadow);
+}
+.project-button:hover {
+    background-color: var(--accent-hover, #0056b3);
+    transform: translateY(-2px);
+    box-shadow: var(--box-shadow);
+}
+
+.project-button:active {
+    transform: translateY(0);
+}
+
+.project-button:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.project-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem auto 0;
+}
+
+#loading-message {
+    text-align: center;
+    margin: 2rem auto;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-style: italic;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+project-controls{
+    margin-bottom: 2rem;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
