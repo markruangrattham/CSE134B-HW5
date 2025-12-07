@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="js/navbar.js"></script>
 <script src="js/theme-init.js"></script>
 <link rel="stylesheet" href="style/index.css">
 </head>
@@ -32,9 +33,17 @@
         <a href="project.html" class="nav-link ">Project</a>
         <a href="workexperience.html" class="nav-link ">Work Experience</a>
         <a href="contactme.html" class="nav-link ">Contact me</a>
-        <a href="form-with-js.html" class="nav-link">Form with JavaScript</a>
-        <a href="form-no-js.html" class="nav-link">Form without JavaScript</a>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookie</a>
+        <details class="nav-dropdown" id="admin-dropdown" hidden>
+            <summary class="nav-link nav-dropdown-toggle">
+                Admin <span class="dropdown-arrow">▼</span>
+            </summary>
+            <ul class="nav-dropdown-menu" id="admin-menu">
+                <li><a href="crud.html" class="nav-link">CRUD</a></li>
+                <li><a href="project-template.html" class="nav-link">Project Template</a></li>
+            </ul>
+        </details>
+
         <button id="theme-toggle" class="toggle-link" type="button" aria-live="polite" aria-label="Toggle between light and dark theme"></button>
     </nav>
 

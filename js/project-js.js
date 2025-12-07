@@ -26,7 +26,7 @@ class ProjectCard extends HTMLElement {
                         : ""
                 }
                 <div style="margin-top: 1rem; text-align: center; display: flex; gap: 1rem; justify-content: center;">
-                    ${card.link ? `<a href="${card.link}" class="project-link-button">Read More</a>` : ''}
+                    ${card.link ? `<a href="project-view.html#${card.link}" class="project-link-button">Read More</a>` : ''}
                     ${card.liveLink ? `<a href="${card.liveLink}" target="_blank" class="project-link-button secondary">Live Demo</a>` : ''}
                 </div>
             </project-details>
@@ -89,6 +89,7 @@ function updateProjectButtons(source) {
     }
 }
 
+// Set initial button state once DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
     updateProjectButtons("None");
 });

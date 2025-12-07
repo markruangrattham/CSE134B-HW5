@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style/project-detail.css">
+</head>
+
+<body class="project-detail-view">
+    <noscript>
+        <h1>Woops, JavaScript is not enabled. Please enable it to view this website!</h1>
+        <p>The theme toggle needs JavaScript, so you'll see the default light theme.</p>
+    </noscript>
+    
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About me</a>
+            <a href="project.html">Project</a>
+            <a href="workexperience.html">Work Experience</a>
+            <a href="contactme.html">Contact me</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookie</a>
+            <button id="theme-toggle" class="toggle-link" type="button" aria-live="polite" aria-label="Toggle between light and dark theme"></button>
+        </nav>
+    </header>
+
+    <main class="detail-content">
+        <a href="project.html" class="back-link">&larr; Back to Projects</a>
+
+        <article>
+            <header class="project-header">
+                <h1 id="project-title">Project Title</h1>
+                <div class="meta" id="project-date">Date Range</div>
+            </header>
+
+            <div class="project-media" id="project-media">
+            </div>
+
+            <div class="project-description" id="project-description">
+            </div>
+
+            <div class="project-more-info" id="project-more-info">
+            </div>
+
+            <div class="project-specs">
+                <div class="spec-item">
+                    <strong>Status</strong>
+                    <span id="project-status">Completed</span>
+                </div>
+                <div class="spec-item">
+                    <strong>Key Features</strong>
+                    <p id="project-features">Features description...</p>
+                </div>
+                <div class="spec-item">
+                    <strong>Technologies Used</strong>
+                    <ul class="tech-stack" id="project-tools">
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <em>This page was made by <span>&hearts;</span> Mark Ruangrattham</em>
+    </footer>
+
+    <script src="js/project-view.js" defer></script>
+    <script src="js/lightdark.js" defer></script>
+</body>
+</html>
+
